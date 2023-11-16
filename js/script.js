@@ -13,7 +13,8 @@ const lightTheme = {
     '--sun-icon-background-color':'white',
     '--moon-icon-fill':'white',
     '--moon-icon-background-color':'#223343',
-    '--alarado-logo-color': '#223343'
+    '--alarado-logo-color': '#223343',
+    '--navbar-mobile-background-color':'white'
 };
 
 const darkTheme = {
@@ -26,7 +27,8 @@ const darkTheme = {
     '--sun-icon-background-color':'#223343',
     '--moon-icon-fill':'#223343',
     '--moon-icon-background-color':'white',
-    '--alarado-logo-color': 'white'
+    '--alarado-logo-color': 'white',
+    '--navbar-mobile-background-color':'#223343'
 };
 
 cgTheme.addEventListener('click',function(){

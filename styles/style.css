@@ -11,6 +11,7 @@
     --moon-icon-fill: white;
     --moon-icon-background-color: #223343;
     --alarado-logo-color: #223343;
+    --navbar-mobile-background-color: white;
 }
 
 *{
@@ -223,27 +224,27 @@ a{
 .navigator-container-mobile{
     display: none;
     width: 50vw;
+
 }
 
 @media (max-width: 640px){
 
     .navigator-container-mobile > nav{
-        width: 70vw;
-        
+        width: 70vw;        
     }
-
-
+    
     .navigator-container-mobile{
         margin: 0px;
         width: 300px;
         position: fixed;
         top: 0;
         right: 0;
-        display: flex;        
+        display: flex;
+        flex-direction: column;        
         height: 100vh;      
         width: fit-content;
         z-index: 2;  
-        background-color: white;
+        background-color: var(--navbar-mobile-background-color);
     }
 
     .navigator-mobile{
@@ -263,7 +264,7 @@ a{
         margin-right: 10px;
         margin-top: 10px;
         color: var(--text-color);
-    }
+    }    
     
     .navigator-item-mobile{
         text-align: center;
@@ -327,4 +328,10 @@ a{
         order: 1;       
         width: 100%;        
     }
+
+    .page-theme-container-mobile{
+        display: flex;
+        margin: auto;
+    }
+    
 }
