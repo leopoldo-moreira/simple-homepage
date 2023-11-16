@@ -220,15 +220,36 @@ a{
     display: none;
 }
 
+.navigator-container-mobile{
+    display: none;
+}
+
 @media (max-width: 640px){
 
     header{
-        
+        border: solid 1px red;
     }
+
+    .navigator-container-mobile{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        border: 1px red solid;
+        height: 100vh;      
+        width: fit-content;
+        z-index: 1000;  
+        background-color: white;
+    }
+
+    .navigator-mobile{
+        list-style: none;
+        text-decoration: none;
+    }       
 
     .burguer-icon{
         display: flex;
-        
+        cursor: pointer;
         justify-content: center;
         align-items: center;
         font-size: 20px;
