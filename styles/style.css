@@ -222,37 +222,59 @@ a{
 
 .navigator-container-mobile{
     display: none;
+    width: 50vw;
 }
 
 @media (max-width: 640px){
 
-    header{
-        border: solid 1px red;
+    .navigator-container-mobile > nav{
+        width: 70vw;
+        
     }
 
+
     .navigator-container-mobile{
+        margin: 0px;
+        width: 300px;
         position: fixed;
         top: 0;
         right: 0;
         display: flex;
-        border: 1px red solid;
+        border: 1px navy solid;
         height: 100vh;      
         width: fit-content;
-        z-index: 1000;  
+        z-index: 2;  
         background-color: white;
     }
 
     .navigator-mobile{
         list-style: none;
         text-decoration: none;
-    }       
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border: 1px red solid;
+        width: 100%;
+        margin: 1em auto;
+    }    
+    
+    .navigator-item-mobile{
+        text-align: center;
+        margin: 05%;
+        font-family: Poppins, sans-serif;
+        font-weight: bold;        
+        font-size: 25px;        
+        cursor: pointer;
+        width: 100%;
+        color: var(--text-color);
+    }
 
     .burguer-icon{
         display: flex;
         cursor: pointer;
         justify-content: center;
-        align-items: center;
-        font-size: 20px;
+        align-items: center;        
     }
 
     .navigator-container{
