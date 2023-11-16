@@ -5,12 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Homepage by Leopoldo Moreira</title>
     <link rel="stylesheet" href="styles/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TwtpWDTm2F/HzY2L3ZdS1wCztr2MSt9CttSSbHG07eDfP7pFfm1cXa8x5bQGAdl6" crossorigin="anonymous">
 </head>
 <body>
+    <!--cabecalho-->
     <header>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!--Logo container-->
+        <div class="logo-container">
+            <svg alt="alarado logo" xmlns="http://www.w3.org/2000/svg" width="141" height="24" fill="none" class="alarado-logo"><path fill="#4CA154" d="M19 1h3l9 10v2l-9 10h-3l-9-10v-2l9-10Z"/><path fill="#2A4DD0" d="M11 1h2l10 10v2L13 23h-2L1 13v-2L11 1Z"/><path d="M56 18h-7l-1 3h-4l6-17h5l6 17h-4l-1-3Zm-1-3-2-7-2 7h4ZM67 3v18h-4V3h4ZM69 14l1-4 2-2 3-1 2 1 2 1V7h4v14h-4v-2l-2 1-2 1-3-1-2-2-1-4Zm10 0-1-2-2-1-2 1-1 2 1 3h4l1-3ZM90 10l2-2 2-1v5h-4v9h-4V7h4v3ZM95 14l1-4 2-2 3-1 2 1 2 1V7h4v14h-4v-2l-2 1-2 1-3-1-2-2-1-4Zm10 0-1-2-2-1-2 1-1 2 1 3h4l1-3ZM111 14l1-4 2-2a6 6 0 0 1 5 0l2 1V3h4v18h-4v-2l-2 1-2 1a6 6 0 0 1-5-3l-1-4Zm10 0-1-2-2-1-2 1-1 2 1 3h4l1-3ZM134 21l-4-1-2-2-1-4 1-4 2-2 4-1 3 1 3 2 1 4-1 4-3 2-3 1Zm0-4h2l1-3-1-2-2-1-2 1-1 2 1 3h2Z"/></svg>
+        </div>
+        <!--Menu navegação-->
+        <nav class="navigator-container">
+            <ul class="navigator">
+                <li class="navigator-item">About us</li>
+                <li class="navigator-item">Product</li>
+                <li class="navigator-item">Resource</li>
+                <li class="navigator-item">Contact</li>
+            </ul>
+        </nav>
+        <!--trocar tema da pagina (Light / Dark)-->
+        <div id="change-theme" class="page-theme-container">
+            <svg alt="moon-icon to change the theme of page to dark" class="theme-icon moon-icon"  width="24" height="24" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill='none'><path class="path" fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.292 4 15.438 4 15.5781 4.04183C16.192 4.22522 16.4775 4.93111 16.1637 5.48976C16.0921 5.61719 15.8744 5.82779 15.4389 6.249C13.935 7.70352 13 9.74257 13 12C13 14.2574 13.935 16.2965 15.4389 17.751C15.8744 18.1722 16.0921 18.3828 16.1637 18.5102C16.4775 19.0689 16.192 19.7748 15.5781 19.9582C15.438 20 15.292 20 15 20V20C10.5817 20 7 16.4183 7 12C7 7.58172 10.5817 4 15 4V4Z"/></svg>
+            <svg alt="sun-icon to change the theme of page to light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" class="theme-icon sun-icon"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" stroke-width="2" d="M12 5V3M12 21v-2M16.9498 7.04996l1.4142-1.41422M5.63608 18.3644l1.41421-1.4142M19 12h2M3 12h2M16.9498 16.95l1.4142 1.4143M5.63608 5.63559 7.05029 7.0498"/></svg>
+        </div>
     </header>
+
+    <!--Sessao principal-->
+    <main class="main-section">
+        <!--Sessao da esquerda-->
+        <div class="left-side">
+            <span class="simple-way body-text bold">😎  Simple way to communicate</span>
+            <h1 class="header-text">Actions for Accessibility in Design</h1>
+            <p class="body-text the-fastest">The fastest way to build and deploy websites with resusable components.</p>
+
+            <!--Sessao de botoes-->
+            <div class="buttons-container">
+                <input id="button" class="btn" value="GET STARTED" type="submit">
+                <a class="text-link body-text" href="">Get live demo</a>
+            </div>
+
+            <!--Sessao small texts-->
+            <div class="small-text-container">                
+                <img alt="done-ring" class="done-ring" alt="done ring icon" src="img/Done_ring_round_fill.svg">
+                <span class="small-text">No credit card required</span>
+                <img alt="done-ring" class="done-ring" alt="done ring icon" src="img/Done_ring_round_fill.svg">
+                <span class="small-text">No software to install</span>
+            </div>
+        </div>
+
+        <!--Sessao da direita-->
+        <div class="right-side">
+            <img alt="cartoon man with a lap top" class="main-img" src="img/hero-image-simple-homepage.png">
+        </div>                
+    </main>
+        <script src="js/script.js"></script>    
 </body>
 </html>
