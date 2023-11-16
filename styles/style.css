@@ -239,8 +239,7 @@ a{
         position: fixed;
         top: 0;
         right: 0;
-        display: flex;
-        border: 1px navy solid;
+        display: flex;        
         height: 100vh;      
         width: fit-content;
         z-index: 2;  
@@ -253,15 +252,22 @@ a{
         align-items: center;
         justify-content: center;
         display: flex;
-        flex-direction: column;
-        border: 1px red solid;
+        flex-direction: column;        
         width: 100%;
-        margin: 1em auto;
+        margin: 4em auto;
     }    
+
+    .close-icon{
+        position: fixed;
+        right: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+        color: var(--text-color);
+    }
     
     .navigator-item-mobile{
         text-align: center;
-        margin: 05%;
+        margin: 5%;
         font-family: Poppins, sans-serif;
         font-weight: bold;        
         font-size: 25px;        
