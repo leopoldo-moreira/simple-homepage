@@ -256,7 +256,7 @@ a{
         text-decoration: none;
         align-items: center;
         justify-content: center;
-        display: none;
+        display: flex;
         flex-direction: column;        
         width: 100%;
         margin: 4em auto;
@@ -286,7 +286,8 @@ a{
         display: flex;
         cursor: pointer;
         justify-content: center;
-        align-items: center;        
+        align-items: center; 
+        color: var(--text-color);       
     }
 
     .navigator-container{
