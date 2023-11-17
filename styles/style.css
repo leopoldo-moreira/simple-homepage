@@ -280,15 +280,19 @@ a{
         font-size: 25px;        
         cursor: pointer;
         width: 100%;
-        color: var(--text-color);
+        color: var(--text-color); 
+        outline: none;       
     }
+
+    
 
     .burguer-icon{
         display: flex;
         cursor: pointer;
         justify-content: center;
         align-items: center; 
-        color: var(--text-color);       
+        color: var(--text-color);  
+        user-select: none;     
     }
 
     .navigator-container{
@@ -339,6 +343,7 @@ a{
     .page-theme-container-mobile{
         display: flex;
         margin: auto;
+        user-select: none;
     }
     
 }
