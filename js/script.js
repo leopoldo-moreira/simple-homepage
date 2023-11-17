@@ -1,4 +1,5 @@
 const cgTheme = document.querySelector('#change-theme');
+const mobileNav = document.querySelector('#navigator-mobile');
 
 let lightMode = true;
 const rootElement = document.documentElement;
@@ -33,8 +34,7 @@ const darkTheme = {
 
 cgTheme.addEventListener('click',function(){
    lightMode ? changeTheme(darkTheme) : changeTheme(lightTheme);
-   lightMode = !lightMode; 
-   
+   lightMode = !lightMode;    
 });
 
 function changeTheme(theme){
@@ -46,3 +46,20 @@ function changeTheme(theme){
 function changeProperty(property, value){
     rootElement.style.setProperty(property,value);
 }
+
+function toggleNav() {
+    var nav = rootElement.querySelector('#navigator-mobile');
+    console.log('clicou')    
+    nav.style.display = (nav.style.display == 'flex') ? 'none' : 'flex';
+}
+
+const burguerIcon = document.querySelector('#burguer-icon');
+const closeIcon = document.querySelector('#close-icon');
+
+burguerIcon.addEventListener('click', function(){
+    mobileNav.style.display = (mobileNav.style.display == 'flex') ? 'none': 'flex';
+})
+
+closeIcon.addEventListener('click', function(){
+    mobileNav.style.display = (mobileNav.style.display == 'flex') ? 'none': 'flex';
+})
