@@ -260,6 +260,7 @@ a{
         flex-direction: column;        
         width: 100%;
         margin: 4em auto;
+        user-select: none;
     }    
 
     .close-icon{
