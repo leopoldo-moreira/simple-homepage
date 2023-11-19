@@ -1,5 +1,5 @@
 const cgTheme = document.querySelector('#change-theme');
-const mobileNav = document.querySelector('#navigator-mob');
+const mobileNav = document.querySelector('#navigator-theme');
 
 let lightMode = true;
 const rootElement = document.documentElement;
