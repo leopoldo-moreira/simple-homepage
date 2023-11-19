@@ -12,6 +12,7 @@
     --moon-icon-background-color: #223343;
     --alarado-logo-color: #223343;
     --navbar-mobile-background-color: white;
+    --navbar-mobile-animation: -100vw;
 }
 
 *{
@@ -221,13 +222,18 @@ a{
     display: none;
 }
 
-.navigator-container-mobile{
-    display: none;
+.navigator-container-mobile{   
+    position:fixed; 
     width: 50vw;
-
+    right: var(--navbar-mobile-animation);    
+    height: fit-content;
 }
 
 @media (max-width: 640px){
+
+    #navigator-mob{
+        z-index: 1000;
+    }
 
     .open-close{
         cursor: pointer;
@@ -242,13 +248,13 @@ a{
         width: 300px;
         position: fixed;
         top: 0;
-        right: 0;
-        display: none;
+        right: var(--navbar-mobile-animation);        
+        display: flex;
         flex-direction: column;        
         height: 100vh;      
-        width: fit-content;
-        z-index: 2;  
+        width: fit-content;          
         background-color: var(--navbar-mobile-background-color);
+        transition: right 1s;
     }
 
     .navigator-mobile{
@@ -263,14 +269,19 @@ a{
         user-select: none;
     }    
 
-    .close-icon{
-        position: fixed;
-        right: 0;
+    .close-icon{  
         margin-right: 10px;
         margin-top: 10px;
         color: var(--text-color);
-        cursor: pointer;
+        cursor: pointer;        
     }    
+
+    #close-icon{
+        position: fixed;
+        right: var(--navbar-mobile-animation);
+        top: 0;
+        transition: right 1s;
+    }
     
     .navigator-item-mobile{
         text-align: center;
@@ -282,9 +293,7 @@ a{
         width: 100%;
         color: var(--text-color); 
         outline: none;       
-    }
-
-    
+    }    
 
     .burguer-icon{
         display: flex;
@@ -342,8 +351,6 @@ a{
 
     .page-theme-container-mobile{
         display: flex;
-        margin: auto;
-        user-select: none;
-    }
-    
+        margin: auto;    
+    }   
 }

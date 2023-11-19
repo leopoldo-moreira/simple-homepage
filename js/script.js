@@ -34,8 +34,13 @@ const darkTheme = {
 
 cgTheme.addEventListener('click',function(){
    lightMode ? changeTheme(darkTheme) : changeTheme(lightTheme);
-   lightMode = !lightMode;    
+   lightMode = !lightMode; 
 });
+
+mobileNav.addEventListener('click',function(){
+    lightMode ? changeTheme(darkTheme) : changeTheme(lightTheme);
+    lightMode = !lightMode; 
+ });
 
 function changeTheme(theme){
     for (prop in theme){
@@ -47,19 +52,13 @@ function changeProperty(property, value){
     rootElement.style.setProperty(property,value);
 }
 
-function toggleNav() {
-    var nav = rootElement.querySelector('#navigator-mobile');
-    console.log('clicou')    
-    nav.style.display = (nav.style.display == 'flex') ? 'none' : 'flex';
-}
-
 const burguerIcon = document.querySelector('#burguer-icon');
 const closeIcon = document.querySelector('#close-icon');
 
 burguerIcon.addEventListener('click', function(){
-    mobileNav.style.display = (mobileNav.style.display == 'flex') ? 'none': 'flex';
+    rootElement.style.setProperty('--navbar-mobile-animation','0');    
 })
 
-closeIcon.addEventListener('click', function(){
-    mobileNav.style.display = (mobileNav.style.display == 'flex') ? 'none': 'flex';
+closeIcon.addEventListener('click', function(){    
+    rootElement.style.setProperty('--navbar-mobile-animation','-100vw');    
 })
