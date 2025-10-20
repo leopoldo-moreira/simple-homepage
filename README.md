@@ -11,3 +11,6 @@
 
   <br>
   <p>Confira os resultados</p>  
+
+  ![Print da Tela Dark Mode OFF](img/print1.png)
+  ![Print da Tela Dark Mode ON](img/print2.png)
